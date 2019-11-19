@@ -130,6 +130,14 @@ function outputs() {
         if (maze[i][j].down) context.fillRect(x + wallWidth, y + squareSize - wallWidth - 1, squareSize - 2*wallWidth, wallWidth * 2 + 2);
         if (maze[i][j].right) context.fillRect(x + squareSize - wallWidth - 1, y + wallWidth, wallWidth * 2 + 2, squareSize - 2*wallWidth);
 
+        if (!mazeDone) {
+            context.fillStyle = 'black';
+            context.font = '15px Arial';
+            context.textAlign = 'left';
+            context.textBaseline = 'top';
+            context.fillText(maze[i][j].set, x + wallWidth + 2, y + wallWidth + 2);
+        }
+
         if (myX == i && myY == j) {
             context.fillStyle = 'red';
             context.beginPath();
