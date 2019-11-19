@@ -15,7 +15,7 @@ function fixSize() {
     const canvas = document.getElementById('mazeCanvas');
     canvas.width = w;
     canvas.height = h;
-    squareSize = h / (mazeHeight + 1);
+    squareSize = w / (mazeWidth + 1);
 
 }
 
