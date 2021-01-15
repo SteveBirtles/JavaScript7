@@ -1,3 +1,5 @@
+//This is a test comment
+
 const mazeWidth = 36, mazeHeight = 20, wallWidth = 6;
 let maze, mazeDone = false, squareSize = 0;
 
